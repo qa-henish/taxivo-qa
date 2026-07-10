@@ -5,8 +5,6 @@ export function MapPlaceholder() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="h-full w-full"
-      role="img"
-      aria-label="Stylised map showing the Taxivo office location"
     >
       <rect width="400" height="260" fill="#EEF3FF" />
       <g stroke="#B9CFFD" strokeWidth="1.5">

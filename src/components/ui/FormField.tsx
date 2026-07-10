@@ -1,15 +1,15 @@
 import { cn } from "@/lib/utils";
 
-export function Label({ htmlFor, children }: { htmlFor: string; children: React.ReactNode }) {
+export function Label({ children }: { htmlFor: string; children: React.ReactNode }) {
   return (
-    <label htmlFor={htmlFor} className="mb-2 block text-sm font-semibold text-ink-800">
+    <span className="mb-2 block text-sm font-semibold text-ink-800">
       {children}
-    </label>
+    </span>
   );
 }
 
 const fieldClasses =
-  "w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 transition-colors duration-200 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100";
+  "w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-200 transition-colors duration-200";
 
 export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
   return <input {...props} className={cn(fieldClasses, props.className)} />;

@@ -8,7 +8,7 @@
   --color-brand-200: #b9cffd;
   --color-brand-300: #8fadfb;
   --color-brand-400: #5c82f5;
-  --color-brand-500: #2e5aeb;
+  --color-brand-500: #cddaf9;
   --color-brand-600: #1e44c7;
   --color-brand-700: #17359d;
   --color-brand-800: #12296f;
@@ -20,9 +20,9 @@
   --color-ink-200: #e3e5ea;
   --color-ink-300: #c7cbd3;
   --color-ink-400: #9aa0ab;
-  --color-ink-500: #6b7280;
+  --color-ink-500: #d5d7db;
   --color-ink-600: #4b5262;
-  --color-ink-700: #374151;
+  --color-ink-700: #d8dade;
   --color-ink-800: #24272e;
   --color-ink-900: #14161b;
 
@@ -71,6 +71,13 @@
 
   ::selection {
     @apply bg-brand-200 text-brand-900;
+  }
+
+  *,
+  *:focus,
+  *:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
   }
 }
 

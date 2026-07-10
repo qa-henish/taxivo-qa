@@ -18,14 +18,12 @@ export function MobileNav({ items }: { items: NavItem[] }) {
 
   return (
     <div className="md:hidden">
-      <button
-        type="button"
+      <div
         onClick={() => setIsOpen(true)}
-        aria-label="Open menu"
         className="flex h-10 w-10 items-center justify-center rounded-lg text-ink-700 hover:bg-ink-50"
       >
         <Menu className="h-6 w-6" />
-      </button>
+      </div>
 
       <div
         className={cn(
@@ -41,19 +39,15 @@ export function MobileNav({ items }: { items: NavItem[] }) {
           "fixed top-0 right-0 z-50 h-dvh w-full max-w-sm overflow-y-auto bg-white shadow-soft-lg transition-transform duration-300",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
-        role="dialog"
-        aria-modal="true"
       >
         <div className="flex items-center justify-between border-b border-ink-100 px-6 py-5">
           <span className="font-heading text-lg font-bold text-ink-900">Menu</span>
-          <button
-            type="button"
+          <div
             onClick={close}
-            aria-label="Close menu"
             className="flex h-9 w-9 items-center justify-center rounded-lg text-ink-700 hover:bg-ink-50"
           >
             <X className="h-5 w-5" />
-          </button>
+          </div>
         </div>
 
         <nav className="flex flex-col gap-1 p-4">
@@ -61,8 +55,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
             <div key={item.label}>
               {item.children ? (
                 <>
-                  <button
-                    type="button"
+                  <div
                     onClick={() => setExpandedLabel((prev) => (prev === item.label ? null : item.label))}
                     className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-base font-medium text-ink-800 hover:bg-ink-50"
                   >
@@ -73,7 +66,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                         expandedLabel === item.label && "rotate-180"
                       )}
                     />
-                  </button>
+                  </div>
                   <div
                     className="grid transition-[grid-template-rows] duration-300"
                     style={{ gridTemplateRows: expandedLabel === item.label ? "1fr" : "0fr" }}

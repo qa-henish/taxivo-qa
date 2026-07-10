@@ -60,10 +60,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sora.variable} ${inter.variable}`}>
+    <html className={`${sora.variable} ${inter.variable}`}>
       <body className="font-sans">
         <Header />
-        <main>{children}</main>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>

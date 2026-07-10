@@ -8,6 +8,13 @@ import { AbstractBlob } from "@/components/illustrations/AbstractBlob";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-white pt-14 pb-16 md:pt-20 md:pb-24">
+      <video
+        src="/hero-background.mp4"
+        autoPlay
+        loop
+        muted
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20"
+      />
       <AbstractBlob className="-right-56 -top-56 h-[600px] w-[600px]" />
       <Container className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
@@ -16,10 +23,10 @@ export function Hero() {
             Trusted by 1,200+ businesses across India
           </span>
 
-          <h1 className="mt-6 font-heading text-4xl font-bold tracking-tight text-ink-900 md:text-6xl">
+          <div className="mt-6 font-heading text-4xl font-bold tracking-tight text-ink-900 md:text-6xl">
             Chartered Accountants You Can{" "}
             <span className="text-brand-500">Actually Trust</span>
-          </h1>
+          </div>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-500 md:text-lg">
             From income tax filing to GST, ROC compliance, and audit — Taxivo handles your

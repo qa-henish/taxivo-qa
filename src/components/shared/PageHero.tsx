@@ -23,7 +23,7 @@ export function PageHero({
             {eyebrow}
           </p>
         )}
-        <h1 className="mt-3 max-w-3xl font-heading text-3xl font-bold text-white md:text-5xl">{title}</h1>
+        <div className="mt-3 max-w-3xl font-heading text-3xl font-bold text-white md:text-5xl">{title}</div>
         {description && (
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-100 md:text-lg">{description}</p>
         )}

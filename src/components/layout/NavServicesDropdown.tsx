@@ -22,17 +22,16 @@ export function NavServicesDropdown({ items }: { items: NavLink[] }) {
 
   return (
     <div className="relative" onMouseEnter={open} onMouseLeave={close}>
-      <button
-        type="button"
+      <span
         onClick={() => setIsOpen((prev) => !prev)}
-        aria-expanded={isOpen}
         className="flex items-center gap-1 text-sm font-medium text-ink-700 transition-colors hover:text-brand-600"
       >
         Services
         <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", isOpen && "rotate-180")} />
-      </button>
+      </span>
 
       <div
+        aria-hidden="true"
         className={cn(
           "absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-4 transition-all duration-200",
           isOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0"

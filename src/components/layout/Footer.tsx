@@ -15,7 +15,7 @@ const socialLinks: { platform: SocialPlatform; href: string; label: string }[] =
 
 export function Footer() {
   return (
-    <footer className="bg-brand-900 text-brand-100">
+    <div className="bg-brand-900 text-brand-900">
       <Container className="py-16 md:py-20">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
@@ -28,7 +28,6 @@ export function Footer() {
                 <Link
                   key={label}
                   href={href}
-                  aria-label={label}
                   className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
                 >
                   <SocialIcon platform={platform} className="h-4 w-4" />
@@ -91,6 +90,6 @@ export function Footer() {
           </div>
         </Container>
       </div>
-    </footer>
+    </div>
   );
 }
