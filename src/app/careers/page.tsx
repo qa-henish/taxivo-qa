@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { HeartHandshake, GraduationCap, Coffee, TrendingUp } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
@@ -33,19 +34,35 @@ export default function CareersPage() {
 
       <section className="bg-white py-16 md:py-24">
         <Container>
-          <SectionHeading eyebrow="Why Taxivo" title="Life at Taxivo" />
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {perks.map((perk, index) => (
-              <FadeIn key={perk.title} delay={index * 80}>
-                <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 text-center shadow-soft">
-                  <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500 text-white">
-                    <perk.icon className="h-6 w-6" />
-                  </span>
-                  <h3 className="mt-5 font-heading text-lg font-semibold text-ink-900">{perk.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-500">{perk.description}</p>
-                </div>
-              </FadeIn>
-            ))}
+          <figure>
+            <div className="relative h-64 w-full overflow-hidden rounded-2xl shadow-soft-lg md:h-80">
+              <Image
+                src="/images/pages/careers-culture.jpg"
+                alt="Taxivo colleagues celebrating a successful project together in the office"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+            <figcaption className="mt-2 text-xs text-ink-400">
+              Colleagues celebrating a successful project together at Taxivo
+            </figcaption>
+          </figure>
+          <div className="mt-14">
+            <SectionHeading eyebrow="Why Taxivo" title="Life at Taxivo" />
+            <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {perks.map((perk, index) => (
+                <FadeIn key={perk.title} delay={index * 80}>
+                  <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 text-center shadow-soft">
+                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500 text-white">
+                      <perk.icon className="h-6 w-6" />
+                    </span>
+                    <h3 className="mt-5 font-heading text-lg font-semibold text-ink-900">{perk.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-500">{perk.description}</p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </Container>
       </section>

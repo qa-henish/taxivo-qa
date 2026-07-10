@@ -8,6 +8,8 @@ export const team: TeamMember[] = [
     bio: "With over 20 years in taxation and audit, Rajesh founded Taxivo to make expert financial guidance accessible to businesses of every size.",
     initials: "RK",
     credentials: ["FCA", "DISA"],
+    imageUrl: "/images/team/rajesh-kulkarni.jpg",
+    imageAlt: "Portrait of Rajesh Kulkarni, Founder and Managing Partner at Taxivo",
   },
   {
     id: "m2",
@@ -16,6 +18,8 @@ export const team: TeamMember[] = [
     bio: "Ritu leads our direct tax practice, specialising in individual and business tax planning, with a decade of experience advising high-net-worth clients.",
     initials: "RS",
     credentials: ["ACA", "CPA"],
+    imageUrl: "/images/team/ritu-sharma.jpg",
+    imageAlt: "Portrait of Ritu Sharma, Senior Tax Consultant at Taxivo",
   },
   {
     id: "m3",
@@ -24,6 +28,8 @@ export const team: TeamMember[] = [
     bio: "Karthik heads our indirect tax division, helping businesses navigate GST registration, filing, and litigation with precision.",
     initials: "KI",
     credentials: ["ACA"],
+    imageUrl: "/images/team/karthik-iyer.jpg",
+    imageAlt: "Portrait of Karthik Iyer, GST Advisory Lead at Taxivo",
   },
   {
     id: "m4",
@@ -32,6 +38,8 @@ export const team: TeamMember[] = [
     bio: "Naina works closely with founders on entity structuring, fundraising readiness, and financial modelling across the startup lifecycle.",
     initials: "NV",
     credentials: ["ACA", "CFA"],
+    imageUrl: "/images/team/naina-verma.jpg",
+    imageAlt: "Portrait of Naina Verma, Startup Advisory Partner at Taxivo",
   },
   {
     id: "m5",
@@ -40,6 +48,8 @@ export const team: TeamMember[] = [
     bio: "Suresh manages ROC compliance and corporate governance for our client portfolio, ensuring every statutory deadline is met.",
     initials: "SN",
     credentials: ["ACS"],
+    imageUrl: "/images/team/suresh-nambiar.jpg",
+    imageAlt: "Portrait of Suresh Nambiar, Company Secretary at Taxivo",
   },
   {
     id: "m6",
@@ -48,5 +58,7 @@ export const team: TeamMember[] = [
     bio: "Aisha leads statutory and internal audit engagements, bringing rigorous process discipline to every client relationship.",
     initials: "AF",
     credentials: ["ACA", "DISA"],
+    imageUrl: "/images/team/aisha-fernandes.jpg",
+    imageAlt: "Portrait of Aisha Fernandes, Audit and Assurance Manager at Taxivo",
   },
 ];

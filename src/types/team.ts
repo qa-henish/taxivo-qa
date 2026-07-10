@@ -5,4 +5,6 @@ export interface TeamMember {
   bio: string;
   initials: string;
   credentials?: string[];
+  imageUrl?: string;
+  imageAlt?: string;
 }

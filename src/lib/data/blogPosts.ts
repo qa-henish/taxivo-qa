@@ -11,6 +11,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-05-12",
     readTimeMinutes: 6,
     tags: ["Income Tax", "Deductions", "Tax Planning"],
+    coverImageUrl: "/images/blog/income-tax-deductions.jpg",
+    coverImageAlt: "Tax documents, calculator, and pen laid out on a desk for income tax review",
     content: [
       "Most taxpayers are familiar with Section 80C, but the Income Tax Act offers several other deductions that often go unclaimed.",
       "Section 80D allows deductions for health insurance premiums, including a separate limit for parents. Section 80TTA and 80TTB cover interest earned on savings accounts and deposits for senior citizens respectively.",
@@ -28,6 +30,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-04-28",
     readTimeMinutes: 7,
     tags: ["GST", "Compliance", "Small Business"],
+    coverImageUrl: "/images/blog/gst-checklist.jpg",
+    coverImageAlt: "Person reviewing GST filing documents at a desk",
     content: [
       "GST compliance can feel overwhelming for small business owners juggling multiple responsibilities. A structured monthly checklist makes the process far more manageable.",
       "Start by reconciling your sales register with GSTR-1 data before the 11th of each month. Cross-check input tax credit against GSTR-2B to avoid mismatches that could trigger notices.",
@@ -45,6 +49,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-04-10",
     readTimeMinutes: 8,
     tags: ["Startups", "Company Registration", "Legal Structure"],
+    coverImageUrl: "/images/blog/business-structure.jpg",
+    coverImageAlt: "Close-up of a hand signing a business incorporation document",
     content: [
       "One of the earliest and most consequential decisions founders make is choosing their business structure. The right choice depends on funding plans, liability protection, and compliance appetite.",
       "A Private Limited Company is best suited for startups planning to raise external funding, given its familiarity with investors and flexibility in equity structuring.",
@@ -63,6 +69,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-03-22",
     readTimeMinutes: 5,
     tags: ["ROC", "Compliance", "Company Law"],
+    coverImageUrl: "/images/blog/roc-compliance.jpg",
+    coverImageAlt: "Close-up of a desk calendar used to track compliance deadlines",
     content: [
       "Every registered company in India, regardless of size or activity level, has annual obligations to the Registrar of Companies that are easy to overlook amid daily operations.",
       "Form AOC-4, covering the company's financial statements, is typically due within 30 days of the AGM. Form MGT-7, the annual return, follows within 60 days of the AGM.",
@@ -80,6 +88,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-02-15",
     readTimeMinutes: 6,
     tags: ["Startups", "Financial Planning", "Fundraising"],
+    coverImageUrl: "/images/blog/startup-planning.jpg",
+    coverImageAlt: "Team collaborating around a whiteboard while planning startup finances",
     content: [
       "In the early days, it's tempting to defer financial process in favour of building the product. But a few disciplined habits early on pay off significantly later.",
       "Separate business and personal finances from day one, even before formal incorporation. This makes bookkeeping, tax filing, and eventual due diligence far simpler.",

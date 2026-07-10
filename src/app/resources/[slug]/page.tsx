@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Clock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -84,7 +85,23 @@ export default async function ResourceDetailPage({
         </Container>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <Container className="relative -mt-8 max-w-3xl md:-mt-10">
+        <figure>
+          <div className="relative h-56 w-full overflow-hidden rounded-2xl shadow-soft-lg md:h-80">
+            <Image
+              src={post.coverImageUrl}
+              alt={post.coverImageAlt}
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 768px) 768px, 100vw"
+            />
+          </div>
+          <figcaption className="mt-2 text-xs text-ink-400">{post.coverImageAlt}</figcaption>
+        </figure>
+      </Container>
+
+      <section className="bg-white pt-10 pb-16 md:pb-24">
         <Container className="max-w-3xl">
           <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-a:text-brand-600">
             {post.content.map((paragraph, index) => (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
@@ -32,6 +33,21 @@ export default function ContactPage() {
       <section className="bg-white py-16 md:py-24">
         <Container className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-6">
+            <figure>
+              <div className="relative h-48 w-full overflow-hidden rounded-2xl border border-ink-100">
+                <Image
+                  src="/images/pages/office-reception.jpg"
+                  alt="Modern reception area at the Taxivo office"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                />
+              </div>
+              <figcaption className="mt-2 text-xs text-ink-400">
+                Reception area at our office, where clients are welcomed for in-person consultations
+              </figcaption>
+            </figure>
+
             <Card hoverable={false}>
               <ul className="space-y-5">
                 {contactDetails.map((detail) => (
@@ -48,9 +64,14 @@ export default function ContactPage() {
               </ul>
             </Card>
 
-            <div className="overflow-hidden rounded-2xl border border-ink-100">
-              <MapPlaceholder />
-            </div>
+            <figure>
+              <div className="overflow-hidden rounded-2xl border border-ink-100">
+                <MapPlaceholder />
+              </div>
+              <figcaption className="mt-2 text-xs text-ink-400">
+                Map showing the Taxivo office location
+              </figcaption>
+            </figure>
           </div>
 
           <Card hoverable={false} className="p-8">

@@ -14,4 +14,6 @@ export interface BlogPost {
   publishedAt: string;
   readTimeMinutes: number;
   tags: string[];
+  coverImageUrl: string;
+  coverImageAlt: string;
 }

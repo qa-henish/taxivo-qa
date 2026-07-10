@@ -6,7 +6,12 @@ export default function NotFound() {
   return (
     <section className="bg-white py-20 md:py-32">
       <Container className="text-center">
-        <NotFoundIllustration />
+        <figure>
+          <NotFoundIllustration />
+          <figcaption className="mt-3 text-xs text-ink-400">
+            Illustration of a misplaced document representing a page that could not be found
+          </figcaption>
+        </figure>
         <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-brand-600 sm:text-sm">
           Error 404
         </p>

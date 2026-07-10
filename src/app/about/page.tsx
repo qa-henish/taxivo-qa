@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Target, Eye, HeartHandshake, ShieldCheck } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -53,7 +54,26 @@ export default function AboutPage() {
               founders to established manufacturing groups.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-6 rounded-2xl bg-brand-900 p-10">
+          <figure>
+            <div className="relative h-72 w-full overflow-hidden rounded-2xl shadow-soft-lg md:h-96">
+              <Image
+                src="/images/pages/about-team.jpg"
+                alt="The Taxivo team collaborating together in a modern office"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+            <figcaption className="mt-2 text-xs text-ink-400">
+              Members of the Taxivo team collaborating in our office
+            </figcaption>
+          </figure>
+        </Container>
+      </section>
+
+      <section className="bg-brand-900 py-16 md:py-20">
+        <Container>
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {companyStats.map((stat) => (
               <StatCounter key={stat.id} value={stat.value} prefix={stat.prefix} suffix={stat.suffix} label={stat.label} />
             ))}

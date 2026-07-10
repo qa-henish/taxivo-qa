@@ -60,9 +60,12 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <figure className="relative">
           <HeroIllustration />
-        </div>
+          <figcaption className="mt-3 text-center text-xs text-ink-400 lg:text-left">
+            Illustration of a financial dashboard tracking business growth
+          </figcaption>
+        </figure>
       </Container>
     </section>
   );
