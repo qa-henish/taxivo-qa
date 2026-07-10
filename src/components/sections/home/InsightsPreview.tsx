@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { BlogCard } from "@/components/shared/BlogCard";
+import { NewsletterSignup } from "@/components/shared/NewsletterSignup";
 import { blogPosts } from "@/lib/data/blogPosts";
 
 export function InsightsPreview() {
@@ -32,6 +33,8 @@ export function InsightsPreview() {
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
+
+        <NewsletterSignup className="mt-14" />
       </Container>
     </section>
   );

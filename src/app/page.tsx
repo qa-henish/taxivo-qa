@@ -5,6 +5,7 @@ import { ServicesPreview } from "@/components/sections/home/ServicesPreview";
 import { IndustriesPreview } from "@/components/sections/home/IndustriesPreview";
 import { StatsBand } from "@/components/sections/home/StatsBand";
 import { ProcessTimeline } from "@/components/sections/home/ProcessTimeline";
+import { QuickQuoteForm } from "@/components/sections/home/QuickQuoteForm";
 import { TestimonialsCarousel } from "@/components/sections/home/TestimonialsCarousel";
 import { FaqPreview } from "@/components/sections/home/FaqPreview";
 import { InsightsPreview } from "@/components/sections/home/InsightsPreview";
@@ -19,6 +20,7 @@ export default function Home() {
       <IndustriesPreview />
       <StatsBand />
       <ProcessTimeline />
+      <QuickQuoteForm />
       <TestimonialsCarousel />
       <FaqPreview />
       <InsightsPreview />
