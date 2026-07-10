@@ -1,3 +1,4 @@
+import { AmbientSoundToggle } from "@/components/ui/AmbientSoundToggle";
 import { Hero } from "@/components/sections/home/Hero";
 import { WhyChooseUs } from "@/components/sections/home/WhyChooseUs";
 import { ServicesPreview } from "@/components/sections/home/ServicesPreview";
@@ -22,6 +23,7 @@ export default function Home() {
       <FaqPreview />
       <InsightsPreview />
       <ContactCta />
+      <AmbientSoundToggle />
     </>
   );
 }
