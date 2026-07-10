@@ -69,7 +69,7 @@ export default function RootLayout({
         <Script
           src="https://staging-widget.braoza.com/v1/assets/static-pages/injector.js"
           type="module"
-          data-account="mrej0jqx23"
+          data-account="mrejmsedwj"
           strategy="afterInteractive"
         />
       </body>
