@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
@@ -65,6 +66,12 @@ export default function RootLayout({
         <Header />
         <div>{children}</div>
         <Footer />
+        <Script
+          src="https://staging-widget.braoza.com/v1/assets/static-pages/injector.js"
+          type="module"
+          data-account="mrej0jqx23"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
