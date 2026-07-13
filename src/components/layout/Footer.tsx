@@ -87,6 +87,14 @@ export function Footer() {
             <Link href="/terms-conditions" className="hover:text-white">
               Terms & Conditions
             </Link>
+            <button
+              type="button"
+              className="hover:text-white"
+              id="accessibility-widget"
+              {...({ accessibilitywidget: "" } as Record<string, string>)}
+            >
+              Accessibility
+            </button>
           </div>
         </Container>
       </div>
