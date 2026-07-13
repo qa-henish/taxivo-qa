@@ -21,7 +21,7 @@ export default function ResourcesPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Resources" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container>
           <ResourcesFilter posts={blogPosts} />
         </Container>

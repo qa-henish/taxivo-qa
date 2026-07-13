@@ -28,7 +28,7 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-ink-50 py-16 md:py-24">
+    <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
       <Container>
         <SectionHeading
           eyebrow="Why Taxivo"
@@ -39,12 +39,12 @@ export function WhyChooseUs() {
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {reasons.map((reason, index) => (
             <FadeIn key={reason.title} delay={index * 80}>
-              <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 shadow-soft">
+              <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 shadow-soft dark:border-ink-800 dark:bg-ink-800 dark:shadow-none">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500 text-white">
                   <reason.icon className="h-6 w-6" />
                 </span>
-                <h3 className="mt-5 font-heading text-lg font-semibold text-ink-900">{reason.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-500">{reason.description}</p>
+                <h3 className="mt-5 font-heading text-lg font-semibold text-ink-900 dark:text-white">{reason.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{reason.description}</p>
               </div>
             </FadeIn>
           ))}

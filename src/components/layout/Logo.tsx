@@ -16,7 +16,7 @@ export function Logo({ inverse = false }: { inverse?: boolean }) {
       <span
         className={cn(
           "font-heading text-xl font-bold tracking-tight",
-          inverse ? "text-white" : "text-ink-900"
+          inverse ? "text-white" : "text-ink-900 dark:text-white"
         )}
       >
         Taxivo

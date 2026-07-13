@@ -10,7 +10,7 @@ export function IndustriesPreview() {
   const previewIndustries = industries.slice(0, 4);
 
   return (
-    <section className="bg-ink-50 py-16 md:py-24">
+    <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
       <Container>
         <SectionHeading
           eyebrow="Industries We Serve"

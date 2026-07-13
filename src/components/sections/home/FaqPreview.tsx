@@ -9,7 +9,7 @@ export function FaqPreview() {
   const previewFaqs = faqs.slice(0, 5);
 
   return (
-    <section className="bg-ink-50 py-16 md:py-24">
+    <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
       <Container>
         <SectionHeading
           eyebrow="FAQ"

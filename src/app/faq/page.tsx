@@ -20,7 +20,7 @@ export default function FaqPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "FAQ" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container>
           <FaqCategoryFilter faqs={faqs} />
         </Container>

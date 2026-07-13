@@ -19,11 +19,11 @@ export function ProcessStepItem({
         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-500 font-heading text-base font-bold text-white">
           {icon ? <Icon name={icon} className="h-5 w-5" /> : step}
         </span>
-        {!isLast && <span className="mt-2 w-px flex-1 bg-brand-100" aria-hidden="true" />}
+        {!isLast && <span className="mt-2 w-px flex-1 bg-brand-100 dark:bg-brand-900" aria-hidden="true" />}
       </div>
       <div className="pb-10">
-        <h3 className="font-heading text-lg font-semibold text-ink-900">{title}</h3>
-        <p className="mt-1.5 text-sm leading-relaxed text-ink-500">{description}</p>
+        <h3 className="font-heading text-lg font-semibold text-ink-900 dark:text-white">{title}</h3>
+        <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{description}</p>
       </div>
     </div>
   );

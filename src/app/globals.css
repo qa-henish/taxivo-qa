@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   /* Brand blue scale */
@@ -66,7 +67,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-ink-700 antialiased;
+    @apply bg-white text-ink-700 antialiased transition-colors duration-200 dark:bg-ink-900 dark:text-ink-300;
   }
 
   ::selection {
@@ -78,6 +79,17 @@
   *:focus-visible {
     outline: none !important;
     box-shadow: none !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-50 dark:bg-ink-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-300 dark:bg-ink-700;
+    border-radius: 999px;
   }
 }
 

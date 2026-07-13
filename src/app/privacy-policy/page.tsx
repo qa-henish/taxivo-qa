@@ -17,9 +17,9 @@ export default function PrivacyPolicyPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Privacy Policy" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container className="max-w-3xl">
-          <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-li:text-ink-600 prose-a:text-brand-600">
+          <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-li:text-ink-600 prose-a:text-brand-600 dark:prose-invert dark:prose-headings:text-white dark:prose-p:text-ink-300 dark:prose-li:text-ink-300 dark:prose-a:text-brand-400">
             <p>
               This Privacy Policy describes how {siteConfig.name} (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or
               &ldquo;our&rdquo;) collects, uses, and safeguards the information you provide when you use our

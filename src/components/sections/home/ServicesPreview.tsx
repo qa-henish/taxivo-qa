@@ -10,7 +10,7 @@ export function ServicesPreview() {
   const featuredServices = services.filter((service) => service.featured);
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
       <Container>
         <SectionHeading
           eyebrow="Our Services"

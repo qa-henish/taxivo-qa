@@ -97,13 +97,13 @@ export default async function ResourceDetailPage({
               sizes="(min-width: 768px) 768px, 100vw"
             />
           </div>
-          <figcaption className="mt-2 text-xs text-ink-400">{post.coverImageAlt}</figcaption>
+          <figcaption className="mt-2 text-xs text-ink-400 dark:text-ink-500">{post.coverImageAlt}</figcaption>
         </figure>
       </Container>
 
-      <section className="bg-white pt-10 pb-16 md:pb-24">
+      <section className="bg-white pt-10 pb-16 md:pb-24 dark:bg-ink-900">
         <Container className="max-w-3xl">
-          <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-a:text-brand-600">
+          <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-a:text-brand-600 dark:prose-invert dark:prose-headings:text-white dark:prose-p:text-ink-300 dark:prose-a:text-brand-400">
             {post.content.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
@@ -119,7 +119,7 @@ export default async function ResourceDetailPage({
         </Container>
       </section>
 
-      <section className="bg-ink-50 py-16 md:py-24">
+      <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
         <Container>
           <SectionHeading eyebrow="Keep Reading" title="More Insights" />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -11,7 +11,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
         "flex h-full flex-col rounded-2xl border p-8",
         tier.highlighted
           ? "border-brand-500 bg-brand-900 text-white shadow-soft-lg"
-          : "border-ink-100 bg-white shadow-soft"
+          : "border-ink-100 bg-white shadow-soft dark:border-ink-800 dark:bg-ink-800 dark:shadow-none"
       )}
     >
       {tier.highlighted && (
@@ -19,19 +19,19 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
           Most Popular
         </Badge>
       )}
-      <h3 className={cn("font-heading text-xl font-bold", tier.highlighted ? "text-white" : "text-ink-900")}>
+      <h3 className={cn("font-heading text-xl font-bold", tier.highlighted ? "text-white" : "text-ink-900 dark:text-white")}>
         {tier.name}
       </h3>
-      <p className={cn("mt-2 text-sm", tier.highlighted ? "text-brand-100" : "text-ink-500")}>
+      <p className={cn("mt-2 text-sm", tier.highlighted ? "text-brand-100" : "text-ink-500 dark:text-ink-400")}>
         {tier.description}
       </p>
 
       <div className="mt-6 flex items-baseline gap-1">
-        <span className={cn("font-heading text-4xl font-bold", tier.highlighted ? "text-white" : "text-ink-900")}>
+        <span className={cn("font-heading text-4xl font-bold", tier.highlighted ? "text-white" : "text-ink-900 dark:text-white")}>
           {tier.price}
         </span>
         {tier.billingNote && (
-          <span className={cn("text-sm", tier.highlighted ? "text-brand-200" : "text-ink-500")}>
+          <span className={cn("text-sm", tier.highlighted ? "text-brand-200" : "text-ink-500 dark:text-ink-400")}>
             {tier.billingNote}
           </span>
         )}
@@ -41,15 +41,15 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
         {tier.features.map((feature) => (
           <li key={feature} className="flex items-start gap-2.5 text-sm">
             <Check
-              className={cn("mt-0.5 h-4 w-4 shrink-0", tier.highlighted ? "text-accent-500" : "text-accent-600")}
+              className={cn("mt-0.5 h-4 w-4 shrink-0", tier.highlighted ? "text-accent-500" : "text-accent-600 dark:text-accent-500")}
             />
-            <span className={tier.highlighted ? "text-brand-50" : "text-ink-600"}>{feature}</span>
+            <span className={tier.highlighted ? "text-brand-50" : "text-ink-600 dark:text-ink-300"}>{feature}</span>
           </li>
         ))}
         {tier.notIncluded?.map((feature) => (
           <li key={feature} className="flex items-start gap-2.5 text-sm">
-            <X className={cn("mt-0.5 h-4 w-4 shrink-0", tier.highlighted ? "text-brand-300" : "text-ink-300")} />
-            <span className={tier.highlighted ? "text-brand-300" : "text-ink-400"}>{feature}</span>
+            <X className={cn("mt-0.5 h-4 w-4 shrink-0", tier.highlighted ? "text-brand-300" : "text-ink-300 dark:text-ink-600")} />
+            <span className={tier.highlighted ? "text-brand-300" : "text-ink-400 dark:text-ink-500"}>{feature}</span>
           </li>
         ))}
       </ul>

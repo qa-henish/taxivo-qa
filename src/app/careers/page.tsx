@@ -32,7 +32,7 @@ export default function CareersPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Careers" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container>
           <figure>
             <div className="relative h-64 w-full overflow-hidden rounded-2xl shadow-soft-lg md:h-80">
@@ -44,7 +44,7 @@ export default function CareersPage() {
                 sizes="100vw"
               />
             </div>
-            <figcaption className="mt-2 text-xs text-ink-400">
+            <figcaption className="mt-2 text-xs text-ink-400 dark:text-ink-500">
               Colleagues celebrating a successful project together at Taxivo
             </figcaption>
           </figure>
@@ -53,12 +53,12 @@ export default function CareersPage() {
             <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {perks.map((perk, index) => (
                 <FadeIn key={perk.title} delay={index * 80}>
-                  <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 text-center shadow-soft">
+                  <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 text-center shadow-soft dark:border-ink-800 dark:bg-ink-800 dark:shadow-none">
                     <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500 text-white">
                       <perk.icon className="h-6 w-6" />
                     </span>
-                    <h3 className="mt-5 font-heading text-lg font-semibold text-ink-900">{perk.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-ink-500">{perk.description}</p>
+                    <h3 className="mt-5 font-heading text-lg font-semibold text-ink-900 dark:text-white">{perk.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{perk.description}</p>
                   </div>
                 </FadeIn>
               ))}
@@ -67,7 +67,7 @@ export default function CareersPage() {
         </Container>
       </section>
 
-      <section className="bg-ink-50 py-16 md:py-24">
+      <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
         <Container>
           <SectionHeading eyebrow="Open Roles" title="Current Openings" />
           <div className="mx-auto mt-12 max-w-3xl space-y-5">
@@ -80,11 +80,11 @@ export default function CareersPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container className="max-w-2xl">
           <Card hoverable={false} className="p-8">
-            <h2 className="font-heading text-2xl font-bold text-ink-900">Apply Now</h2>
-            <p className="mt-2 text-sm text-ink-500">
+            <h2 className="font-heading text-2xl font-bold text-ink-900 dark:text-white">Apply Now</h2>
+            <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">
               Don&apos;t see the perfect role? Send us your details and we&apos;ll reach out when a fit opens up.
             </p>
             <div className="mt-8">

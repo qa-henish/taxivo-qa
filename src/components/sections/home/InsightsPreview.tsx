@@ -11,7 +11,7 @@ export function InsightsPreview() {
   const latestPosts = blogPosts.slice(0, 3);
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
       <Container>
         <SectionHeading
           eyebrow="Latest Insights"

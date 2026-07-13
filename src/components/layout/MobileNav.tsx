@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { NavItem } from "@/types/nav";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function MobileNav({ items }: { items: NavItem[] }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
     <div className="md:hidden">
       <div
         onClick={() => setIsOpen(true)}
-        className="flex h-10 w-10 items-center justify-center rounded-lg text-ink-700 hover:bg-ink-50"
+        className="flex h-10 w-10 items-center justify-center rounded-lg text-ink-700 hover:bg-ink-50 dark:text-ink-300 dark:hover:bg-ink-800"
       >
         <Menu className="h-6 w-6" />
       </div>
@@ -36,17 +37,20 @@ export function MobileNav({ items }: { items: NavItem[] }) {
 
       <div
         className={cn(
-          "fixed top-0 right-0 z-50 h-dvh w-full max-w-sm overflow-y-auto bg-white shadow-soft-lg transition-transform duration-300",
+          "fixed top-0 right-0 z-50 h-dvh w-full max-w-sm overflow-y-auto bg-white shadow-soft-lg transition-transform duration-300 dark:bg-ink-900",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="flex items-center justify-between border-b border-ink-100 px-6 py-5">
-          <span className="font-heading text-lg font-bold text-ink-900">Menu</span>
-          <div
-            onClick={close}
-            className="flex h-9 w-9 items-center justify-center rounded-lg text-ink-700 hover:bg-ink-50"
-          >
-            <X className="h-5 w-5" />
+        <div className="flex items-center justify-between border-b border-ink-100 px-6 py-5 dark:border-ink-800">
+          <span className="font-heading text-lg font-bold text-ink-900 dark:text-white">Menu</span>
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <div
+              onClick={close}
+              className="flex h-9 w-9 items-center justify-center rounded-lg text-ink-700 hover:bg-ink-50 dark:text-ink-300 dark:hover:bg-ink-800"
+            >
+              <X className="h-5 w-5" />
+            </div>
           </div>
         </div>
 
@@ -57,7 +61,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                 <>
                   <div
                     onClick={() => setExpandedLabel((prev) => (prev === item.label ? null : item.label))}
-                    className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-base font-medium text-ink-800 hover:bg-ink-50"
+                    className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-base font-medium text-ink-800 hover:bg-ink-50 dark:text-ink-100 dark:hover:bg-ink-800"
                   >
                     {item.label}
                     <ChevronDown
@@ -78,7 +82,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                             key={child.href}
                             href={child.href}
                             onClick={close}
-                            className="rounded-lg px-3 py-2.5 text-sm text-ink-600 hover:bg-ink-50 hover:text-brand-600"
+                            className="rounded-lg px-3 py-2.5 text-sm text-ink-600 hover:bg-ink-50 hover:text-brand-600 dark:text-ink-300 dark:hover:bg-ink-800 dark:hover:text-brand-400"
                           >
                             {child.label}
                           </Link>
@@ -91,7 +95,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                 <Link
                   href={item.href ?? "#"}
                   onClick={close}
-                  className="block rounded-lg px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-50"
+                  className="block rounded-lg px-3 py-3 text-base font-medium text-ink-800 hover:bg-ink-50 dark:text-ink-100 dark:hover:bg-ink-800"
                 >
                   {item.label}
                 </Link>
@@ -100,7 +104,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
           ))}
         </nav>
 
-        <div className="mt-2 border-t border-ink-100 p-6">
+        <div className="mt-2 border-t border-ink-100 p-6 dark:border-ink-800">
           <Button href="/contact" className="w-full" onClick={close}>
             Contact Us
           </Button>

@@ -17,9 +17,9 @@ export default function TermsConditionsPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container className="max-w-3xl">
-          <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-li:text-ink-600 prose-a:text-brand-600">
+          <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-ink-900 prose-p:text-ink-600 prose-li:text-ink-600 prose-a:text-brand-600 dark:prose-invert dark:prose-headings:text-white dark:prose-p:text-ink-300 dark:prose-li:text-ink-300 dark:prose-a:text-brand-400">
             <p>
               These Terms &amp; Conditions govern your use of the {siteConfig.name} website and any
               professional services engagement with our firm. This is placeholder content for

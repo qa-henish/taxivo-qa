@@ -30,11 +30,11 @@ export default function ContactPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-6">
             <figure>
-              <div className="relative h-48 w-full overflow-hidden rounded-2xl border border-ink-100">
+              <div className="relative h-48 w-full overflow-hidden rounded-2xl border border-ink-100 dark:border-ink-800">
                 <Image
                   src="/images/pages/office-reception.jpg"
                   alt="Modern reception area at the Taxivo office"
@@ -43,7 +43,7 @@ export default function ContactPage() {
                   sizes="(min-width: 1024px) 40vw, 100vw"
                 />
               </div>
-              <figcaption className="mt-2 text-xs text-ink-400">
+              <figcaption className="mt-2 text-xs text-ink-400 dark:text-ink-500">
                 Reception area at our office, where clients are welcomed for in-person consultations
               </figcaption>
             </figure>
@@ -52,12 +52,12 @@ export default function ContactPage() {
               <ul className="space-y-5">
                 {contactDetails.map((detail) => (
                   <li key={detail.label} className="flex items-start gap-3.5">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-ink-900 dark:text-brand-400">
                       <detail.icon className="h-5 w-5" />
                     </span>
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-ink-400">{detail.label}</p>
-                      <p className="mt-0.5 text-sm text-ink-700">{detail.value}</p>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-ink-400 dark:text-ink-500">{detail.label}</p>
+                      <p className="mt-0.5 text-sm text-ink-700 dark:text-ink-300">{detail.value}</p>
                     </div>
                   </li>
                 ))}
@@ -65,18 +65,18 @@ export default function ContactPage() {
             </Card>
 
             <figure>
-              <div className="overflow-hidden rounded-2xl border border-ink-100">
+              <div className="overflow-hidden rounded-2xl border border-ink-100 dark:border-ink-800">
                 <MapPlaceholder />
               </div>
-              <figcaption className="mt-2 text-xs text-ink-400">
+              <figcaption className="mt-2 text-xs text-ink-400 dark:text-ink-500">
                 Map showing the Taxivo office location
               </figcaption>
             </figure>
           </div>
 
           <Card hoverable={false} className="p-8">
-            <h2 className="font-heading text-2xl font-bold text-ink-900">Send Us a Message</h2>
-            <p className="mt-2 text-sm text-ink-500">
+            <h2 className="font-heading text-2xl font-bold text-ink-900 dark:text-white">Send Us a Message</h2>
+            <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">
               Fill out the form below and our team will get back to you within one business day.
             </p>
             <div className="mt-8">

@@ -7,7 +7,7 @@ import { AbstractBlob } from "@/components/illustrations/AbstractBlob";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white pt-14 pb-16 md:pt-20 md:pb-24">
+    <section className="relative overflow-hidden bg-white pt-14 pb-16 md:pt-20 md:pb-24 dark:bg-ink-900">
       <video
         src="/hero-background.mp4"
         autoPlay
@@ -18,19 +18,19 @@ export function Hero() {
       <AbstractBlob className="-right-56 -top-56 h-[600px] w-[600px]" />
       <Container className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-4 py-1.5 text-xs font-semibold text-brand-700 sm:text-sm">
+          <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-4 py-1.5 text-xs font-semibold text-brand-700 sm:text-sm dark:bg-brand-900/40 dark:text-brand-300">
             <ShieldCheck className="h-4 w-4" />
             Trusted by 1,200+ businesses across India
           </span>
 
-          <div className="mt-6 font-heading text-4xl font-bold tracking-tight text-ink-900 text-shadow-sm md:text-6xl">
+          <div className="mt-6 font-heading text-4xl font-bold tracking-tight text-ink-900 text-shadow-sm md:text-6xl dark:text-white">
             Chartered Accountants You Can{" "}
-            <span className="underline decoration-brand-500 decoration-4 underline-offset-4 text-brand-500">
+            <span className="underline decoration-brand-500 decoration-4 underline-offset-4 text-brand-500 dark:text-brand-400">
               Actually Trust
             </span>
           </div>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-500 md:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-500 md:text-lg dark:text-ink-400">
             From income tax filing to GST, ROC compliance, and audit — Taxivo handles your
             entire financial compliance so you can focus on growing your business.
           </p>
@@ -48,7 +48,7 @@ export function Hero() {
           <div className="mt-10 flex items-center gap-4">
             <div className="flex -space-x-3">
               {["AM", "PN", "RK", "SR"].map((initials) => (
-                <Avatar key={initials} initials={initials} size="sm" className="ring-2 ring-white" />
+                <Avatar key={initials} initials={initials} size="sm" className="ring-2 ring-white dark:ring-ink-900" />
               ))}
             </div>
             <div>
@@ -57,14 +57,14 @@ export function Hero() {
                   <Star key={i} className="h-4 w-4 fill-gold-500 text-gold-500" />
                 ))}
               </div>
-              <p className="mt-0.5 text-xs text-ink-500">Rated 4.9/5 by our clients</p>
+              <p className="mt-0.5 text-xs text-ink-500 dark:text-ink-400">Rated 4.9/5 by our clients</p>
             </div>
           </div>
         </div>
 
         <figure className="relative">
           <HeroIllustration />
-          <figcaption className="mt-3 text-center text-xs text-ink-400 lg:text-left">
+          <figcaption className="mt-3 text-center text-xs text-ink-400 lg:text-left dark:text-ink-500">
             Illustration of a financial dashboard tracking business growth
           </figcaption>
         </figure>

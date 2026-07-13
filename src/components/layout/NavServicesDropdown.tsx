@@ -24,7 +24,7 @@ export function NavServicesDropdown({ items }: { items: NavLink[] }) {
     <div className="relative" onMouseEnter={open} onMouseLeave={close}>
       <span
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center gap-1 text-sm font-medium text-ink-700 transition-colors hover:text-brand-600"
+        className="flex items-center gap-1 text-sm font-medium text-ink-700 transition-colors hover:text-brand-600 dark:text-ink-200 dark:hover:text-brand-400"
       >
         Services
         <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", isOpen && "rotate-180")} />
@@ -37,25 +37,25 @@ export function NavServicesDropdown({ items }: { items: NavLink[] }) {
           isOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0"
         )}
       >
-        <div className="grid grid-cols-2 gap-1 rounded-2xl border border-ink-100 bg-white p-4 shadow-soft-lg">
+        <div className="grid grid-cols-2 gap-1 rounded-2xl border border-ink-100 bg-white p-4 shadow-soft-lg dark:border-ink-800 dark:bg-ink-800 dark:shadow-none">
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-brand-50"
+              className="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-brand-50 dark:hover:bg-ink-700"
             >
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600">
+              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-ink-900 dark:text-brand-400">
                 <Icon name={item.icon ?? "FileText"} className="h-4 w-4" />
               </span>
               <span>
-                <span className="block text-sm font-semibold text-ink-900">{item.label}</span>
-                <span className="mt-0.5 block text-xs text-ink-500 line-clamp-1">{item.description}</span>
+                <span className="block text-sm font-semibold text-ink-900 dark:text-white">{item.label}</span>
+                <span className="mt-0.5 block text-xs text-ink-500 line-clamp-1 dark:text-ink-400">{item.description}</span>
               </span>
             </Link>
           ))}
           <Link
             href="/services"
-            className="col-span-2 mt-1 flex items-center justify-center gap-1.5 rounded-xl border-t border-ink-100 pt-4 text-sm font-semibold text-brand-600 hover:text-brand-700"
+            className="col-span-2 mt-1 flex items-center justify-center gap-1.5 rounded-xl border-t border-ink-100 pt-4 text-sm font-semibold text-brand-600 hover:text-brand-700 dark:border-ink-700 dark:text-brand-400 dark:hover:text-brand-300"
           >
             View All Services
             <ArrowRight className="h-4 w-4" />

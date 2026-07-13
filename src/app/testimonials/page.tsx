@@ -20,7 +20,7 @@ export default function TestimonialsPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Testimonials" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container>
           <TestimonialsFilter testimonials={testimonials} />
         </Container>

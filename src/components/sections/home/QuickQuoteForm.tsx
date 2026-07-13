@@ -52,7 +52,7 @@ export function QuickQuoteForm() {
   };
 
   return (
-    <section className="bg-ink-50 py-16 md:py-24">
+    <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
       <Container className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <SectionHeading
           eyebrow="Get Started"
@@ -104,11 +104,11 @@ export function QuickQuoteForm() {
             </form>
           )}
 
-          <p className="mt-5 text-sm text-ink-500">
+          <p className="mt-5 text-sm text-ink-500 dark:text-ink-400">
             Prefer to share more detail, or reach us at {siteConfig.email}?{" "}
             <Link
               href="/contact"
-              className="inline-flex items-center gap-1 font-semibold text-brand-600 transition-colors hover:text-brand-700"
+              className="inline-flex items-center gap-1 font-semibold text-brand-600 transition-colors hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300"
             >
               Visit our full contact page
               <ArrowRight className="h-3.5 w-3.5" />

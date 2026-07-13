@@ -23,7 +23,7 @@ export function TabButtons({
             "rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200",
             activeTab === tab.id
               ? "bg-brand-500 text-white"
-              : "bg-ink-50 text-ink-600 hover:bg-ink-100"
+              : "bg-ink-50 text-ink-600 hover:bg-ink-100 dark:bg-ink-800 dark:text-ink-300 dark:hover:bg-ink-700"
           )}
         >
           {tab.label}

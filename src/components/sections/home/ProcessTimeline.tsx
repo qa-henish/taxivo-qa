@@ -5,7 +5,7 @@ import { engagementProcess } from "@/lib/data/process";
 
 export function ProcessTimeline() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
       <Container>
         <SectionHeading
           eyebrow="How It Works"

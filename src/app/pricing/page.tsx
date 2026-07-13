@@ -27,7 +27,7 @@ export default function PricingPage() {
         breadcrumbItems={[{ label: "Home", href: "/" }, { label: "Pricing" }]}
       />
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 dark:bg-ink-900">
         <Container>
           <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-3">
             {pricingTiers.map((tier, index) => (
@@ -40,7 +40,7 @@ export default function PricingPage() {
       </section>
 
       {pricingFaqs.length > 0 && (
-        <section className="bg-ink-50 py-16 md:py-24">
+        <section className="bg-ink-50 py-16 md:py-24 dark:bg-ink-800/40">
           <Container>
             <SectionHeading eyebrow="Questions" title="Pricing FAQs" />
             <div className="mx-auto mt-10 max-w-2xl">
