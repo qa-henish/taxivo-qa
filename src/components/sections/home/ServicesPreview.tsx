@@ -27,7 +27,12 @@ export function ServicesPreview() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button href="/services" variant="outline" size="lg">
+          <Button href="/services" variant="outline" size="lg"
+            style={{
+              "backgroundColor": "rgb(249, 250, 251)",
+              "color": "rgb(55, 65, 81)",
+              "fontSize": "16px"
+            }}>
             View All Services
             <ArrowRight className="h-4 w-4" />
           </Button>

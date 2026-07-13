@@ -28,7 +28,11 @@ export function SectionHeading({
       )}
       <h2 className="font-heading text-3xl font-bold text-ink-900 md:text-4xl dark:text-white">{title}</h2>
       {description && (
-        <p className="mt-4 text-base text-ink-500 md:text-lg leading-relaxed dark:text-ink-400">{description}</p>
+        <p className="mt-4 text-base text-ink-500 md:text-lg leading-relaxed dark:text-ink-400"
+          style={{
+            "color": "rgb(26, 43, 60)",
+            "fontSize": "18px"
+          }}>{description}</p>
       )}
     </div>
   );

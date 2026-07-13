@@ -45,6 +45,7 @@ export function Avatar({
         sizeClasses[size],
         className
       )}
+      style={{ 'backgroundColor': 'rgb(67, 56, 202)', 'color': 'rgb(255, 255, 255)', 'fontSize': 14 }}
       aria-hidden="true"
     >
       {initials}

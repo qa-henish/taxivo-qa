@@ -28,7 +28,8 @@ export function InsightsPreview() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button href="/resources" variant="outline" size="lg">
+          <Button href="/resources" variant="outline" size="lg"
+            style={{ 'backgroundColor': 'rgb(248, 249, 251)', 'color': 'rgb(31, 41, 55)', 'fontSize': 16 }}>
             Browse All Resources
             <ArrowRight className="h-4 w-4" />
           </Button>

@@ -24,12 +24,13 @@ export function FaqPreview() {
         </div>
 
         <div className="mt-10 text-center">
-          <Button href="/faq" variant="outline" size="lg">
+          <Button href="/faq" variant="outline" size="lg"
+            style={{ 'backgroundColor': 'rgb(248, 249, 251)', 'color': 'rgb(31, 41, 55)', 'fontSize': 16 }}>
             View All FAQs
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
       </Container>
-    </section>
+    </section >
   );
 }

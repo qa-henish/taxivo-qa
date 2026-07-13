@@ -36,9 +36,11 @@ export function AccordionItem({
         style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
       >
         <div className="overflow-hidden">
-          <p className="pb-4 pr-8 text-sm leading-relaxed text-ink-500 md:text-base dark:text-ink-400">{answer}</p>
+          <p className="pb-4 pr-8 text-sm leading-relaxed text-ink-500 md:text-base dark:text-ink-400"
+            style={{ 'backgroundColor': 'rgb(248, 249, 251)', 'color': 'rgb(31, 41, 55)', 'fontSize': 16 }}>
+            {answer}</p>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

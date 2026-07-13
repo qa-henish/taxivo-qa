@@ -33,7 +33,14 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle className="hidden md:flex" />
-          <Button href="/contact" size="sm" className="hidden md:inline-flex" tabIndex={2}>
+          <Button href="/contact"
+            size="sm"
+            className="hidden md:inline-flex" tabIndex={2}
+            style={{
+              'backgroundColor': 'rgb(28, 51, 90)',
+              'color': 'rgb(255, 255, 255)',
+              'fontSize': '14px'
+            }}>
             Contact Us
           </Button>
           <MobileNav items={headerNav} />
