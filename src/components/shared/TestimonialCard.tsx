@@ -8,7 +8,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <Card className="flex h-full flex-col">
       <Quote className="h-7 w-7 text-brand-200" />
-      <p className="mt-4 flex-1 text-sm leading-relaxed text-ink-600">&ldquo;{testimonial.quote}&rdquo;</p>
+      <p className="mt-4 flex-1 text-sm italic leading-relaxed text-ink-600">&ldquo;{testimonial.quote}&rdquo;</p>
 
       <div className="mt-6 flex items-center gap-1">
         {Array.from({ length: 5 }).map((_, index) => (
