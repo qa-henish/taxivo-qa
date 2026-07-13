@@ -23,9 +23,11 @@ export function Hero() {
             Trusted by 1,200+ businesses across India
           </span>
 
-          <div className="mt-6 font-heading text-4xl font-bold tracking-tight text-ink-900 md:text-6xl">
+          <div className="mt-6 font-heading text-4xl font-bold tracking-tight text-ink-900 text-shadow-sm md:text-6xl">
             Chartered Accountants You Can{" "}
-            <span className="text-brand-500">Actually Trust</span>
+            <span className="underline decoration-brand-500 decoration-4 underline-offset-4 text-brand-500">
+              Actually Trust
+            </span>
           </div>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-500 md:text-lg">
