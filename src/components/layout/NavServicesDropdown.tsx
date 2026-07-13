@@ -25,6 +25,7 @@ export function NavServicesDropdown({ items }: { items: NavLink[] }) {
       <span
         onClick={() => setIsOpen((prev) => !prev)}
         className="flex items-center gap-1 text-sm font-medium text-ink-700 transition-colors hover:text-brand-600 dark:text-ink-200 dark:hover:text-brand-400"
+        style={{ backgroundColor: "rgb(255, 255, 255)", color: "rgb(51, 51, 51)", fontSize: "14px" }}
       >
         Services
         <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", isOpen && "rotate-180")} />

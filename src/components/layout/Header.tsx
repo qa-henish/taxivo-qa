@@ -23,6 +23,7 @@ export function Header() {
                 href={item.href ?? "#"}
                 tabIndex={9}
                 className="text-sm font-medium text-ink-700 transition-colors hover:text-brand-600 dark:text-ink-200 dark:hover:text-brand-400"
+                style={{ backgroundColor: "rgb(255, 255, 255)", color: "rgb(51, 51, 51)", fontSize: "14px" }}
               >
                 {item.label}
               </Link>
