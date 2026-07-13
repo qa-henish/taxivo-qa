@@ -28,6 +28,7 @@ export const footerGroups: FooterLinkGroup[] = [
       { label: "Careers", href: "/careers" },
       { label: "FAQ", href: "/faq" },
       { label: "Contact Us", href: "/contact" },
+      { label: "日本語", href: "/ja" },
     ],
   },
   {
