@@ -27,12 +27,7 @@ export function IndustriesPreview() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button href="/industries" variant="outline" size="lg"
-            style={{
-              "backgroundColor": "rgb(249, 250, 251)",
-              "color": "rgb(55, 65, 81)",
-              "fontSize": "16px"
-            }}>
+          <Button href="/industries" variant="outline" size="lg">
             View All Industries
             <ArrowRight className="h-4 w-4" />
           </Button>

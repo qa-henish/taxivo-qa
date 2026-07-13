@@ -23,7 +23,6 @@ export function Header() {
                 href={item.href ?? "#"}
                 tabIndex={9}
                 className="text-sm font-medium text-ink-700 transition-colors hover:text-brand-600 dark:text-ink-200 dark:hover:text-brand-400"
-                style={{ backgroundColor: "rgb(255, 255, 255)", color: "rgb(51, 51, 51)", fontSize: "14px" }}
               >
                 {item.label}
               </Link>
@@ -33,14 +32,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle className="hidden md:flex" />
-          <Button href="/contact"
-            size="sm"
-            className="hidden md:inline-flex" tabIndex={2}
-            style={{
-              'backgroundColor': 'rgb(28, 51, 90)',
-              'color': 'rgb(255, 255, 255)',
-              'fontSize': '14px'
-            }}>
+          <Button href="/contact" size="sm" className="hidden md:inline-flex" tabIndex={2}>
             Contact Us
           </Button>
           <MobileNav items={headerNav} />

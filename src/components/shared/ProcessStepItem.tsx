@@ -23,12 +23,7 @@ export function ProcessStepItem({
       </div>
       <div className="pb-10">
         <h3 className="font-heading text-lg font-semibold text-ink-900 dark:text-white">{title}</h3>
-        <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400"
-          style={{
-            "backgroundColor": "rgb(249, 250, 251)",
-            "color": "rgb(55, 65, 81)",
-            "fontSize": "16px"
-          }}>{description}</p>
+        <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{description}</p>
       </div>
     </div>
   );

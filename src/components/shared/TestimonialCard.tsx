@@ -26,12 +26,11 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         <Avatar initials={testimonial.initials} seed={testimonial.name} size="sm" />
         <div>
           <p className="text-sm font-semibold text-ink-900 dark:text-white">{testimonial.name}</p>
-          <p className="text-xs text-ink-500 dark:text-ink-400"
-            style={{ 'backgroundColor': 'rgb(255, 255, 255)', 'color': 'rgb(74, 74, 74)', 'fontSize': 12 }}>
+          <p className="text-xs text-ink-500 dark:text-ink-400">
             {testimonial.role}, {testimonial.company}
           </p>
         </div>
       </div>
-    </Card >
+    </Card>
   );
 }
