@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Logo } from "@/components/layout/Logo";
 import { NavServicesDropdown } from "@/components/layout/NavServicesDropdown";
 import { MobileNav } from "@/components/layout/MobileNav";
@@ -9,7 +8,7 @@ import { headerNav } from "@/lib/data/nav";
 
 export function Header() {
   return (
-    <div className="sticky top-0 z-40 border-b border-ink-100 bg-white/95 backdrop-blur dark:border-ink-800 dark:bg-ink-900/95">
+    <div className="sticky top-0 z-40 border-b border-ink-100 bg-white/95 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
         <Logo />
 
@@ -22,7 +21,7 @@ export function Header() {
                 key={item.label}
                 href={item.href ?? "#"}
                 tabIndex={9}
-                className="text-sm font-medium text-ink-700 transition-colors hover:text-brand-600 dark:text-ink-200 dark:hover:text-brand-400"
+                className="text-sm font-medium text-ink-700 transition-colors hover:text-brand-600"
               >
                 {item.label}
               </Link>
@@ -31,7 +30,6 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle className="hidden md:flex" />
           <Button href="/contact" size="sm" className="hidden md:inline-flex" tabIndex={2}>
             Contact Us
           </Button>
